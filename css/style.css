@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background: #040c18; }
+
+body {
+  font-family: "Manrope", sans-serif; }
+
+.heading__primary {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 6.2rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.04em;
+  background-image: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.company__logos {
+  padding: 4rem 6rem;
+  margin: 6rem; }
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem; }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; }
+  .header__description {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #81afdd;
+    line-height: 2.7rem; }
+  .header__input {
+    display: flex;
+    flex: 1; }
+  .header__review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; }
+  .header__text {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 3.8rem; }
+  .header__logo {
+    width: 100%;
+    margin-left: 10rem; }
+
+.input {
+  flex: 1;
+  background: #052d56;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff; }
+
+.input__button {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  background: #ff4820;
+  text-decoration: none;
+  border-radius: 5px 0px 0px 5px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem; }
+  .navigation__list {
+    display: flex;
+    list-style: none; }
+  .navigation__items {
+    margin: 2rem; }
+  .navigation__link:link, .navigation__link:visited {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s; }
+  .navigation__link:hover, .navigation__link:visited {
+    border-bottom: 1px solid #fff; }
+  .navigation__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .navigation__button--signin {
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      cursor: pointer;
+      color: #fff; }
+    .navigation__button--signup {
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      cursor: pointer;
+      color: #fff;
+      background: #ff4820;
+      border-radius: 5px;
+      padding: 1rem 2rem; }
+
+.logo {
+  width: 6.2rem;
+  height: 1.6rem; }

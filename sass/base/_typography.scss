@@ -1,0 +1,16 @@
+body {
+  font-family: $font-family;
+}
+
+.heading__primary {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 6.2rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.04em;
+  background-image: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}

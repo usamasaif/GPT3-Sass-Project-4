@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 6rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $description-text;
+    line-height: 2.7rem;
+  }
+
+  &__input {
+    display: flex;
+    flex: 1;
+  }
+
+  &__review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 3.8rem;
+  }
+
+  &__logo {
+    width: 100%;
+    margin-left: 10rem;
+  }
+}
+
+.input {
+  flex: 1;
+  background: $input-bg;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+}
+
+.input__button {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  background: $button-bg;
+  text-decoration: none;
+  border-radius: 5px 0px 0px 5px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
+
+  &__list {
+    display: flex;
+
+    list-style: none;
+  }
+
+  &__items {
+    margin: 2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    @include linksStyle;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:visited {
+    border-bottom: 1px solid #fff;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &--signin {
+      @include linksStyle;
+    }
+
+    &--signup {
+      @include linksStyle;
+      background: $button-bg;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.logo {
+  width: 6.2rem;
+  height: $default-font-size;
+}
