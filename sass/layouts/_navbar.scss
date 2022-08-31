@@ -5,6 +5,12 @@
 
   padding: 2rem 6rem;
 
+  &__nav {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
   &__list {
     display: flex;
 

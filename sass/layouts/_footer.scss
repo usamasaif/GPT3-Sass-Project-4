@@ -13,6 +13,12 @@
     background-clip: text;
     text-fill-color: transparent;
     padding: 17.5rem 30.9rem 6.4rem 31rem;
+
+    @include respond(phone) {
+      text-align: center;
+      padding: 4rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__button {
@@ -39,6 +45,12 @@
     gap: 21rem;
 
     padding: 18rem 24rem 8.3rem 20rem;
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: [col1-start] 10rem [col1-end col2-start] 10rem [col2-end];
+      grid-template-rows: [row1-start] 10rem [row1-end row2-start] 10rem [row2-end];
+    }
   }
 
   &__logo {
@@ -102,5 +114,11 @@
     color: #ffffff;
     text-align: center;
     padding-bottom: 2.7rem;
+
+    @include respond(phone) {
+      line-height: 2rem;
+      font-size: 3rem;
+      margin-top: 6rem;
+    }
   }
 }

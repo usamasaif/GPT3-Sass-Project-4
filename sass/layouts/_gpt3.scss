@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include respond(phone) {
+      text-align: center;
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -11,6 +16,10 @@
     line-height: 3rem;
     color: #81afdd;
     flex-basis: 70%;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__heading {
@@ -19,11 +28,20 @@
     align-items: center;
     justify-content: space-between;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
     &--text {
       font-size: $default-font-size;
       font-weight: 500;
       line-height: 3rem;
       color: #ff8a71;
+
+      @include respond(phone) {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
     }
   }
 

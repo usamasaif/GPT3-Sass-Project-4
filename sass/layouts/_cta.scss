@@ -24,6 +24,10 @@
       font-weight: 800;
       line-height: 4.5rem;
       color: #000000;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
   }
 

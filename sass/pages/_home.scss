@@ -19,8 +19,16 @@
 
 .cta {
   margin: 15.4rem 13.5rem;
+
+  @include respond(phone) {
+    margin: 10rem 4rem;
+  }
 }
 
 .blog {
   margin: 15.4rem 13.5rem;
+
+  @include respond(phone) {
+    margin: 8rem 4rem;
+  }
 }

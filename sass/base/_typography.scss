@@ -13,6 +13,12 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+
+  @include respond(phone) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 
 .heading__secondary {
@@ -26,6 +32,10 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .heading__tertiary {
@@ -34,4 +44,8 @@ body {
   color: #fff;
   line-height: 7.5rem;
   letter-spacing: -0.04em;
+
+  @include respond(phone) {
+    margin: 0 auto;
+  }
 }
