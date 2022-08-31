@@ -4,6 +4,11 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @include respond(tab-port) {
+      text-align: center;
+      flex-direction: column;
+    }
+
     @include respond(phone) {
       text-align: center;
       flex-direction: column;

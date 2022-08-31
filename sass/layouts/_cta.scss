@@ -25,6 +25,10 @@
       line-height: 4.5rem;
       color: #000000;
 
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+
       @include respond(phone) {
         font-size: 2rem;
       }

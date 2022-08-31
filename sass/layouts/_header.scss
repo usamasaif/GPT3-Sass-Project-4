@@ -5,6 +5,10 @@
 
   padding: 0 6rem;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
   @include respond(phone) {
     flex-direction: column;
   }

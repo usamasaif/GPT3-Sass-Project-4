@@ -37,6 +37,9 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent; }
+  @media screen and (max-width: 56.25em) {
+    .heading__primary {
+      font-size: 5rem; } }
   @media screen and (max-width: 37.5em) {
     .heading__primary {
       margin: 0 auto;
@@ -52,6 +55,9 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent; }
+  @media screen and (max-width: 56.25em) {
+    .heading__secondary {
+      text-align: center; } }
   @media screen and (max-width: 37.5em) {
     .heading__secondary {
       text-align: center; } }
@@ -79,6 +85,9 @@ body {
 .blog__margin--bottom {
   width: 70rem;
   margin-bottom: 11.5rem; }
+  @media screen and (max-width: 56.25em) {
+    .blog__margin--bottom {
+      margin-bottom: 7rem; } }
   @media screen and (max-width: 37.5em) {
     .blog__margin--bottom {
       margin-bottom: 5rem; } }
@@ -105,6 +114,10 @@ body {
       grid-column-end: col1-end;
       grid-row-start: row1-start;
       grid-row-end: row2-end; }
+    @media screen and (max-width: 75em) {
+      .blog__details {
+        display: flex;
+        flex-direction: column; } }
     @media screen and (max-width: 37.5em) {
       .blog__details {
         display: flex;
@@ -161,6 +174,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5rem; }
+  @media screen and (max-width: 56.25em) {
+    .logos {
+      gap: 2rem; } }
   @media screen and (max-width: 37.5em) {
     .logos {
       flex-direction: column; } }
@@ -187,6 +203,9 @@ body {
       font-weight: 800;
       line-height: 4.5rem;
       color: #000000; }
+      @media screen and (max-width: 56.25em) {
+        .cta__content--text2 {
+          font-size: 2rem; } }
       @media screen and (max-width: 37.5em) {
         .cta__content--text2 {
           font-size: 2rem; } }
@@ -214,6 +233,15 @@ body {
     background-clip: text;
     text-fill-color: transparent;
     padding: 17.5rem 30.9rem 6.4rem 31rem; }
+    @media screen and (max-width: 75em) {
+      .footer__heading {
+        font-size: 4rem;
+        line-height: 5rem; } }
+    @media screen and (max-width: 56.25em) {
+      .footer__heading {
+        font-size: 3rem;
+        line-height: 4rem;
+        padding: 10rem 20rem; } }
     @media screen and (max-width: 37.5em) {
       .footer__heading {
         text-align: center;
@@ -232,16 +260,31 @@ body {
       text-decoration: none;
       text-transform: capitalize;
       padding: 2rem 2.2rem; }
+      @media screen and (max-width: 56.25em) {
+        .footer__button--style:link, .footer__button--style:visited {
+          width: 17rem;
+          height: 5rem;
+          padding: 1.5rem 1.7rem;
+          font-size: 1.6rem; } }
   .footer__links {
     display: flex;
     justify-content: center;
     gap: 21rem;
     padding: 18rem 24rem 8.3rem 20rem; }
+    @media screen and (max-width: 75em) {
+      .footer__links {
+        gap: 10rem; } }
+    @media screen and (max-width: 56.25em) {
+      .footer__links {
+        gap: 5rem; } }
     @media screen and (max-width: 37.5em) {
       .footer__links {
         display: grid;
+        justify-content: space-between;
         grid-template-columns: [col1-start] 10rem [col1-end col2-start] 10rem [col2-end];
-        grid-template-rows: [row1-start] 10rem [row1-end row2-start] 10rem [row2-end]; } }
+        grid-template-rows: [row1-start] 10rem [row1-end row2-start] 10rem [row2-end];
+        column-gap: 20rem;
+        row-gap: 10rem; } }
   .footer__logo {
     width: 11.8rem;
     height: 3rem;
@@ -344,6 +387,10 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 5rem; }
+  @media screen and (max-width: 56.25em) {
+    .future {
+      flex-direction: column;
+      align-items: center; } }
   @media screen and (max-width: 37.5em) {
     .future {
       flex-direction: column;
@@ -357,6 +404,9 @@ body {
       font-weight: 500;
       line-height: 3rem;
       color: #ff8a71; }
+      @media screen and (max-width: 56.25em) {
+        .future__heading--text {
+          text-align: center; } }
       @media screen and (max-width: 37.5em) {
         .future__heading--text {
           font-size: 2.2rem;
@@ -387,6 +437,10 @@ body {
       @media screen and (max-width: 37.5em) {
         .future__description > * {
           font-size: 1.8rem; } }
+    @media screen and (max-width: 56.25em) {
+      .future__description {
+        text-align: center;
+        margin: 0 auto; } }
     @media screen and (max-width: 37.5em) {
       .future__description {
         text-align: center;
@@ -396,6 +450,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+  @media screen and (max-width: 56.25em) {
+    .gpt3__intro {
+      text-align: center;
+      flex-direction: column; } }
   @media screen and (max-width: 37.5em) {
     .gpt3__intro {
       text-align: center;
@@ -438,6 +496,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 6rem; }
+  @media screen and (max-width: 56.25em) {
+    .header {
+      flex-direction: column; } }
   @media screen and (max-width: 37.5em) {
     .header {
       flex-direction: column; } }
@@ -511,6 +572,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem; }
+  @media screen and (max-width: 75em) {
+    .navigation {
+      width: 100%; } }
+  @media screen and (max-width: 56.25em) {
+    .navigation__nav {
+      display: none; } }
   @media screen and (max-width: 37.5em) {
     .navigation__nav {
       display: none; } }
@@ -578,6 +645,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end; }
+  @media screen and (max-width: 56.25em) {
+    .possibility {
+      flex-direction: column; } }
   @media screen and (max-width: 37.5em) {
     .possibility {
       flex-direction: column; } }
@@ -587,6 +657,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media screen and (max-width: 56.25em) {
+      .possibility__content {
+        margin-top: 2rem;
+        text-align: center; } }
     @media screen and (max-width: 37.5em) {
       .possibility__content {
         margin-top: 2rem;
@@ -630,12 +704,18 @@ body {
 
 .cta {
   margin: 15.4rem 13.5rem; }
+  @media screen and (max-width: 56.25em) {
+    .cta {
+      margin: 12rem 6rem; } }
   @media screen and (max-width: 37.5em) {
     .cta {
       margin: 10rem 4rem; } }
 
 .blog {
   margin: 15.4rem 13.5rem; }
+  @media screen and (max-width: 75em) {
+    .blog {
+      margin: 12rem 8rem; } }
   @media screen and (max-width: 37.5em) {
     .blog {
       margin: 8rem 4rem; } }

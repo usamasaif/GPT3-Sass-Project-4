@@ -18,6 +18,14 @@
       grid-row-end: row2-end;
     }
 
+    @include respond(tab-land) {
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+    }
+
     @include respond(phone) {
       display: flex;
       flex-direction: column;
