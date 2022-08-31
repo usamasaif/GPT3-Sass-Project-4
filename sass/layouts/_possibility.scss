@@ -1,0 +1,37 @@
+.possibility {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // margin-bottom: 2rem;
+
+    &--text {
+      font-size: $default-font-size;
+      font-weight: 500;
+      line-height: 3rem;
+      color: #71e5ff;
+    }
+
+    &--description {
+      font-size: $default-font-size;
+      font-weight: 400;
+      line-height: 3rem;
+      color: $description-text;
+    }
+
+    &--access {
+      font-size: $default-font-size;
+      font-weight: 500;
+      line-height: 3rem;
+      color: #ff8a71;
+    }
+  }
+}

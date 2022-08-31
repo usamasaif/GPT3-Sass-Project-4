@@ -1,0 +1,45 @@
+.future {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--text {
+      font-size: $default-font-size;
+      font-weight: 500;
+      line-height: 3rem;
+      color: #ff8a71;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--text {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 2.4rem;
+      letter-spacing: -0.04em;
+      color: #fff;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & > * {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $description-text;
+    }
+  }
+}

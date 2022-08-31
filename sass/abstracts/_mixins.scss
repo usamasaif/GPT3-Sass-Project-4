@@ -8,3 +8,44 @@
   cursor: pointer;
   color: #fff;
 }
+
+@mixin footerItem {
+  font-family: "Gilroy-Medium";
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+}
+
+@mixin footerItemHeading {
+  font-family: "Gilroy-Bold";
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #fff;
+  margin-bottom: 3.6rem;
+}
+
+////////////////media queries
+//phone 600px == 37.5em
+//tablet-portrait 900 == 56.25em
+//tablet-landscape 1200 ==75em
+//big-desktop 1800 ==112.5em
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-port) {
+    @media screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-land) {
+    @media screen and (max-width: 75em) {
+      @content;
+    }
+  }
+}
